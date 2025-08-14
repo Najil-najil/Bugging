@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Theertha – My Bestie Forever: A Journey of Friendship & Memories</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500;700&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fffaf7;
+            color: #5a3e36;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+        }
+        
+        /* Cover Page Styling */
+        .cover {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cover::before {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%23ffffff' fill-opacity='0.3' d='M48.1,41.5c-13.8,0-25,11.2-25,25c0,13.8,11.2,25,25,25c13.8,0,25-11.2,25-25C73.1,52.7,61.9,41.5,48.1,41.5z'/%3E%3C/svg%3E");
+            opacity: 0.3;
+            animation: rotate 120s linear infinite;
+        }
+        
+        .cover-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 5rem;
+            color: #c2185b;
+            margin-bottom: 10px;
+            position: relative;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.1);
+        }
+        
+        .cover-subtitle {
+            font-size: 1.8rem;
+            max-width: 80%;
+            margin-top: 0;
+            position: relative;
+            font-weight: 500;
+        }
+        
+        .date-badge {
+            background: #ffccbc;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.4rem;
+            margin-top: 30px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Memory Book Content */
+        .page {
+            padding: 50px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .memory-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .memory-date {
+            flex: 1;
+            min-width: 200px;
+            background: #f8f5f2;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid #e91e63;
+        }
+        
+        .memory-content {
+            flex: 2;
+            min-width: 300px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            position: relative;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        
+        .memory-content::before {
+            content: "❝";
+            position: absolute;
+            top: -25px;
+            left: 10px;
+            font-size: 5rem;
+            color: #f8bbd0;
+            opacity: 0.3;
+        }
+        
+        .memory-title {
+            font-size: 1.8rem;
+            color: #c2185b;
+            margin-top: 0;
+            font-weight: 700;
+        }
+        
+        .memory-text {
+            white-space: pre-line;
+        }
+        
+        .decoration {
+            text-align: center;
+            margin: 40px 0;
+            color: #e91e63;
+            font-size: 2.5rem;
+            letter-spacing: 15px;
+        }
+        
+        .conclusion {
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+            position: relative;
+            overflow: hidden;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        
+        .conclusion::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(90deg, #e91e63, #ff9800);
+        }
+        
+        .final-message {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #c2185b;
+            margin: 50px 0;
+            padding: 20px;
+            border: 3px dashed #e91e63;
+            border-radius: 20px;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Heart decorations */
+        .heart {
+            position: absolute;
+            background-color: #ff4081;
+            display: inline-block;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .heart::before, .heart::after {
+            content: "";
+            background-color: #ff4081;
+            border-radius: 50%;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .heart::before { top: -50%; left: 0; }
+        .heart::after { top: 0; left: 50%; }
+        
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Page -->
+    <div class="cover">
+        <h1 class="cover-title">Theertha – My Bestie Forever</h1>
+        <p class="cover-subtitle">A Journey of Friendship & Memories</p>
+        <div class="date-badge">Celebrating your birthday on August 15</div>
+        
+        <!-- Decorative hearts -->
+        <div class="heart" style="width:20px; height:20px; top:20%; left:15%;"></div>
+        <div class="heart" style="width:15px; height:15px; top:30%; right:20%; animation-delay: -2s;"></div>
+        <div class="heart" style="width:25px; height:25px; bottom:25%; left:25%; animation-delay: -4s;"></div>
+        <div class="heart" style="width:18px; height:18px; bottom:15%; right:15%; animation-delay: -3s;"></div>
+    </div>
+    
+    <div class="page">
+        <!-- Introduction -->
+        <div class="memory-container">
+            <div class="memory-date">
+                <h2>Our Story</h2>
+                <p>From classmates to inseparable best friends</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">This memory book captures our journey exactly as I remember it - in our own special mix of languages and memories. Happy birthday to my forever friend!</p>
+            </div>
+        </div>
+        
+        <div class="decoration">✻ ✻ ✻</div>
+        
+        <!-- Memories - EXACT TEXT FROM YOUR FILE -->
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>02-06-2022</h3>
+                <p>First Meeting</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> 8classil new schoolil vach first ayitt ninne kandu.
+-> techer yanne and ninne class leaders akki.
+-> first lookil theera updated allathe nannayitt religeous ayitt ulla kutti.
+-> but aarayalum nokki pokunna smile.
+-> classil vach eyy paatt padunuuu</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>26-06-2022</h3>
+                <p>Staircase Talks</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> class leader's assemlykk pokunna timeil staircase vach aathiyam ayitt samsarikkunuuu.</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>07-2022</h3>
+                <p>Magic Show</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> schoolil nee magic kanikkunuuu</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>11-2022</h3>
+                <p>Confessions</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> eyy and ur friendum cheern yanne propose chayunuuu. njn committed ann yann kariyam nigal ariyunuuu.</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>1stweek-12-2022</h3>
+                <p>New Feelings</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> vidhuvin ninood crush thonnunuuu.
+-> exam timeil avan propose chayyan try chayyunuuu.
+-> avankk yanthan parayan ullath yann anweshikkan vandi yanikk athiyam ayitt msg ayakkunuuu.
+-> yanikk vandi Swethaye propose chayyunuuu</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>2ndweek-12-2022</h3>
+                <p>Relationship Start</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> eyy akke confuion akkunuu yes parayanoo vandayoo yann.
+-> njn parazhitt nee yes parayunuu.
+-> yante girlfriend luluvum ayitt msg nee msg ayakkunuuu.</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>3rdweek-12-2022</h3>
+                <p>First "I Love You"</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> njn nattil ayappol yanikk 'I love you' yann parazh msg ayakkunuuu and kurach time kazhin delete chayunuuu.</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>4thweek-12-2022</h3>
+                <p>Growing Closer</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> njagal nalla company akunuu thourgh online.
+-> njagal thammil friends akunuuu.
+-> nee yanikk atiyam ayitt photo ayachu.</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>01-2023</h3>
+                <p>Daily Messages</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> vidhu and theertha pratheekich onnum samsarikkunilla.
+-> but eyy yanikk yallaa divasavum msg ayakkumayirunuu.</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>02-2023</h3>
+                <p>Academic Help</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> yanikk vandi physics modal indakkiii thannuuu yanikk</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>04-2023 - 05-2023</h3>
+                <p>Becoming BFFs</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> yanikk daily msg ayakkumayirunuu
+-> yalla kariyagalum anwshikkum
+-> njagal nalla BFF akunuuu</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>06-2023</h3>
+                <p>Support System</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> vidhuvumayi breakup akunuuu
+-> and njn first time aval ullil karayunnath kandu.
+-> njn ninne ashwasippikkan kuree try chaythu ath njagal thammil ulla bond increse chaythu
+-> Periods kariyagal okke paeayan thudagi yannood</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>06-2023 - 03-2024</h3>
+                <p>Constant Companions</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> edakk edakk avalooduppam nadakkum.</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>03-2024</h3>
+                <p>Night Out</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> njnnum neeyum orumich nightil party(ganamela) kanan pokunuu.</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>05-2024</h3>
+                <p>Photo Sharing</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> Akkikkooyude photo ninte veettil prashanam aayii
+-> Njagal edakk edakk phone vilikkum</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>06-2024</h3>
+                <p>Academic Support</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> Yanikk vandi notes yazhuthitharum</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>05-2025</h3>
+                <p>Growing Closer</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> Njn avalood kuduthal aduthu 
+-> Yante and ninte selfnte kariyagal parazhu koduthu.
+-> eyy chayyullaa yann theerumanathil</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>06-2025</h3>
+                <p>Emotional Moments</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> Yante nerbhadathil randu time chayyunuu
+-> eyy aadiyam ayitt karayunnath njn kandu standil vach</p>
+            </div>
+        </div>
+        
+        <div class="memory-container">
+            <div class="memory-date">
+                <h3>07-2025</h3>
+                <p>Private Sharing</p>
+            </div>
+            <div class="memory-content">
+                <p class="memory-text">-> ninood njn private photo ayakkan fun ayitt voice ayitt oarayunuu (aval parazha photos ayachu kodukkathe nilkkan)
+-> eyy athil yanne samshayikkunuu 
+-> Yannood dazhiyam varunuu
+-> Kurach kazhin dazhiyam okke mariii</p>
+            </div>
+        </div>
+        
+        <div class="decoration">✻ ❤ ✻</div>
+        
+        <!-- Conclusion -->
+        <div class="conclusion">
+            <h2 class="memory-title">What You Mean to Me</h2>
+            <p class="memory-text">-> Yante lifil yaattavum important ayitt ulla oru aal.
+-> Yante frinedsil topil ulla aaal
+-> Yannee pattii kuree kariyagal ariyavunna aal
+-> Yanikk yalla kariyagalum thurann parayan pattunna aal (Even if private)
+-> Yanikk avale oruppad eshattam ann
+-> Girlsine pattii kuree kariyagal ariyan pattii aval yalla kariyagalum parayum
+-> Njagal thammil ulla bond eniyum kuudattee and yappozhum thick firends ayitt thannee indavattee</p>
+        </div>
+        
+        <div class="final-message">
+            At last My baby ann <br>
+            Happy birthday Babbyyy kuttiii
+        </div>
+    </div>
+</body>
+</html>
